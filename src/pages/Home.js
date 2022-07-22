@@ -13,7 +13,7 @@ import Modal from "../components/Modal";
 
 function Home() {
   let text =
-    "I am a self taught frontend developer, a lady working towards significant self development, a passionate and dedicated web developer and programmer.I also enjoy working with people to create user friendly website ideas.";
+    "I am a self taught frontend developer, a lady working towards significant self development, a passionate and dedicated web developer and programmer.I also enjoy working with people to create user friendly websites.";
   const { loading, lightmode } = useAppProvider();
   const [substring, setSubstring] = useState(30);
 
