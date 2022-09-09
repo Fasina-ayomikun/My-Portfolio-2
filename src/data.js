@@ -2,9 +2,9 @@ import image from "./images/kitty.png";
 import image2 from "./images/countries.png";
 import image3 from "./images/tasty-kitchen.png";
 import image4 from "./images/space.png";
-import image5 from "./images/time.png";
 import image6 from "./images/beautyhairs.png";
 import image7 from "./images/portfolio1.png";
+import image8 from "./images/todo.png";
 
 export const projects = [
   {
@@ -55,5 +55,13 @@ export const projects = [
     github_url: "https://github.com/Fasina-ayomikun/Portfolio",
     profile_url: "https://fash-portfolio1.netlify.app",
     desc: "My previous portfolio using React.",
+  },
+  {
+    id: "7",
+    url: image8,
+    name: "My Todo List",
+    github_url: "https://github.com/Fasina-ayomikun/Todo-List-",
+    profile_url: "https://fash-todo-list.netlify.app",
+    desc: "A todo list using HTML, CSS ,and  Vanilla JS",
   },
 ];
