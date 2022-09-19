@@ -5,6 +5,7 @@ import image4 from "./images/space.png";
 import image6 from "./images/beautyhairs.png";
 import image7 from "./images/portfolio1.png";
 import image8 from "./images/todo.png";
+import image9 from "./images/stopwatch.png";
 
 export const projects = [
   {
@@ -63,5 +64,13 @@ export const projects = [
     github_url: "https://github.com/Fasina-ayomikun/Todo-List-",
     profile_url: "https://fash-todo-list.netlify.app",
     desc: "A todo list using HTML, CSS ,and  Vanilla JS",
+  },
+  {
+    id: "8",
+    url: image9,
+    name: "My Simple Stopwatch",
+    github_url: "https://github.com/Fasina-ayomikun/Simple-Stopwatch",
+    profile_url: "https://fash-stopwatch.netlify.app",
+    desc: "A simple stopwatch  using HTML, CSS ,and  Vanilla JS",
   },
 ];
