@@ -6,6 +6,7 @@ import image6 from "./images/beautyhairs.png";
 import image7 from "./images/portfolio1.png";
 import image8 from "./images/todo.png";
 import image9 from "./images/stopwatch.png";
+import image10 from "./images/tictactoe.png";
 
 export const projects = [
   {
@@ -72,5 +73,13 @@ export const projects = [
     github_url: "https://github.com/Fasina-ayomikun/Simple-Stopwatch",
     profile_url: "https://fash-stopwatch.netlify.app",
     desc: "A simple stopwatch  using HTML, CSS ,and  Vanilla JS",
+  },
+  {
+    id: "9",
+    url: image10,
+    name: "My Simple Tic Tac Toe Game",
+    github_url: "https://github.com/Fasina-ayomikun/Tic-Tac-Toe",
+    profile_url: "https://fash-tictactoe.netlify.app",
+    desc: "A simple tic tac toe game  using HTML, CSS ,and  Vanilla JS",
   },
 ];
