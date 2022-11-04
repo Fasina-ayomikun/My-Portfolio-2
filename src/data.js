@@ -1,4 +1,4 @@
-import image from "./images/kitty.png";
+import image from "./images/quiz app.png";
 import image2 from "./images/countries.png";
 import image3 from "./images/tasty-kitchen.png";
 import image4 from "./images/space.png";
@@ -12,11 +12,11 @@ import image11 from "./images/guess the colour.png";
 export const projects = [
   {
     id: "1",
-    name: "Kitty Restaurant",
+    name: "Quiz App",
     url: image,
-    desc: "A Restaurant website created using HTML,CSS and Vanilla JavaScript.",
-    github_url: "https://github.com/Fasina-ayomikun/Kitty-Restaurant",
-    profile_url: "https://kitty-s-restaurant.netlify.app",
+    desc: "A quiz app using HTML,CSS and Vanilla JavaScript.",
+    github_url: "https://github.com/Fasina-ayomikun/Quiz-App",
+    profile_url: "https://fash-quiz-game.netlify.app",
   },
   {
     id: "2",
