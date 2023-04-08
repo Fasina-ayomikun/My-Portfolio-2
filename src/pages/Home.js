@@ -6,7 +6,7 @@ import file from "../images/resume.jpg";
 import image from "../images/hero.png";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import { FaGithubSquare, FaLinkedin } from "react-icons/fa";
+import { FaGithubSquare, FaLinkedin, FaYoutubeSquare } from "react-icons/fa";
 import { useAppProvider } from "../context";
 import Sidebar from "../components/Sidebar";
 import Modal from "../components/Modal";
@@ -64,6 +64,12 @@ function Home() {
       <div className='social-icons'>
         <a href='https://github.com/Fasina-ayomikun' target='blank'>
           <FaGithubSquare />
+        </a>
+        <a
+          href='https://www.youtube.com/channel/UClog1_6iQNgYEDlAwbH6CYA'
+          target='blank'
+        >
+          <FaYoutubeSquare />
         </a>
         <a
           href='https://www.linkedin.com/in/ayomikun-fasina-b791ab225'

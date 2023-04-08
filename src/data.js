@@ -8,10 +8,28 @@ import image8 from "./images/todo.png";
 import image9 from "./images/stopwatch.png";
 import image10 from "./images/tictactoe.png";
 import image11 from "./images/guess the colour.png";
+import image12 from "./images/mama-recipe.png";
+import image13 from "./images/todo-full.png";
 
 export const projects = [
   {
     id: "1",
+    name: "Mama Recipe App",
+    url: image12,
+    desc: "A MERN Stack website.",
+    github_url: "https://github.com/Fasina-ayomikun/Mama-Recipe-Frontend",
+    profile_url: "https://mama-s-recipe.vercel.app",
+  },
+  {
+    id: "13",
+    name: "Todo App",
+    url: image13,
+    desc: "A MERN Stack todo app.",
+    github_url: "https://github.com/Fasina-ayomikun/Todo-List-Frontend",
+    profile_url: "https://todo-list-frontend-five.vercel.app",
+  },
+  {
+    id: "11",
     name: "Quiz App",
     url: image,
     desc: "A quiz app using HTML,CSS and Vanilla JavaScript.",
