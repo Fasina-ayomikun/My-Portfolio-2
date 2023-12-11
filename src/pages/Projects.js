@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import image from "../images/kitty.png";
+import { useNavigate } from "react-router-dom";
 import { Button, Row, Col } from "react-bootstrap";
 import { projects } from "../data";
 import { useAppProvider } from "../context";
@@ -8,6 +9,7 @@ import Sidebar from "../components/Sidebar";
 import Modal from "../components/Modal";
 function Projects() {
   const { lightmode, loading } = useAppProvider();
+  const navigation = useNavigate();
   if (loading) {
     return <Modal />;
   }

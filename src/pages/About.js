@@ -34,13 +34,7 @@ function About() {
               acquisition in web development and other interesting programming
               languages.
             </p>
-            <p>
-              <b>Education: </b>I am a undergraduate of Computer Engineering at{" "}
-              <abbr title='Ladoke Akintola University of Technology'>
-                LAUTECH
-              </abbr>
-              .
-            </p>
+
             <Button variant='outline-primary' className='btn'>
               <Link to='/contact'>Hire Me</Link>
             </Button>
@@ -63,13 +57,30 @@ function About() {
             <Col className='skill'>
               <h4>CSS</h4>
             </Col>
-          </Row>
-          <Row>
             <Col className='skill'>
               <h4>JavaScript</h4>
             </Col>
+          </Row>
+          <Row>
+            <Col className='skill'>
+              <h4>Typescript</h4>
+            </Col>
             <Col className='skill'>
               <h4>React</h4>
+            </Col>
+            <Col className='skill'>
+              <h4>NextJs</h4>
+            </Col>
+          </Row>
+          <Row>
+            <Col className='skill'>
+              <h4>NodeJs</h4>
+            </Col>
+            <Col className='skill'>
+              <h4>Express</h4>
+            </Col>
+            <Col className='skill'>
+              <h4>MongoDB</h4>
             </Col>
           </Row>
         </div>

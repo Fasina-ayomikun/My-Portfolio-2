@@ -10,8 +10,18 @@ import image10 from "./images/tictactoe.png";
 import image11 from "./images/guess the colour.png";
 import image12 from "./images/mama-recipe.png";
 import image13 from "./images/todo-full.png";
+import image14 from "./images/health-first.png";
+import image15 from "./images/mega-chat.png";
 
 export const projects = [
+  {
+    id: "15",
+    name: "Meaga Chat App",
+    url: image15,
+    desc: "A MERN Stack chat website with realtime connection using Socket io.Also has phone number verification.",
+    github_url: "https://github.com/Fasina-ayomikun/Mega-Chat-Frontend",
+    profile_url: "https://mega-chat-frontend.vercel.app",
+  },
   {
     id: "1",
     name: "Mama Recipe App",
@@ -19,6 +29,14 @@ export const projects = [
     desc: "A MERN Stack website.",
     github_url: "https://github.com/Fasina-ayomikun/Mama-Recipe-Frontend",
     profile_url: "https://mama-s-recipe.vercel.app",
+  },
+  {
+    id: "14",
+    name: "Health First",
+    url: image14,
+    desc: "A MERN Stack charity website.You can create charities and allow donations.",
+    github_url: "https://github.com/Fasina-ayomikun/Health-First-Frontend",
+    profile_url: "https://health-first-frontend.vercel.app",
   },
   {
     id: "13",
