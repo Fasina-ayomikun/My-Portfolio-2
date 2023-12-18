@@ -66,6 +66,7 @@ button {
 }
 .darkmode-img {
   height: 60px;
+  cursor: pointer;
 }
 .nav-links {
   display: flex;
