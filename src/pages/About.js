@@ -1,9 +1,7 @@
 import React from "react";
 import { Row, Col } from "react-bootstrap";
 import Navbar from "../components/Navbar";
-// import file from "../images/resume.jpg";
 import image from "../images/person.png";
-// import { Link } from "react-router-dom";
 import { useAppProvider } from "../context";
 import Sidebar from "../components/Sidebar";
 import Modal from "../components/Modal";
@@ -35,7 +33,6 @@ function About() {
               acquisition in web development and other interesting programming
               languages.
             </p>
-
             <HireMeDownloadCvButtons />
           </Col>
           <Col>
