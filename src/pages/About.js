@@ -28,7 +28,7 @@ function About() {
             <p>
               I am a self taught frontend developer, a lady working towards
               significant self development, a passionate and dedicated web
-              developer and programmer.I am currently skilled in HTML,CSS and
+              developer and programmer. I am currently skilled in HTML,CSS and
               JavaScript and i working towards incremental knowledge and skill
               acquisition in web development and other interesting programming
               languages.
