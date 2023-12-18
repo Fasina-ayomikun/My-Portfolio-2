@@ -13,7 +13,7 @@ import Modal from "../components/Modal";
 
 function Home() {
   let text =
-    "I am a self taught frontend developer, a lady working towards significant self development, a passionate and dedicated web developer and programmer.I also enjoy working with people to create user friendly websites.";
+    "I am a self taught frontend developer, a lady working towards significant self development, a passionate and dedicated web developer and programmer. I also enjoy working with people to create user friendly websites.";
   const { loading, lightmode } = useAppProvider();
   const [substring, setSubstring] = useState(30);
 
@@ -37,43 +37,43 @@ function Home() {
         lightmode ? "home-section section light-mode" : "home-section section"
       }`}
     >
-      <div className='home-container container'>
+      <div className="home-container container">
         <Navbar />
         <hr />
         <Sidebar />
 
-        <Row className='home-content'>
-          <Col className='home-info'>
+        <Row className="home-content">
+          <Col className="home-info">
             <h1>I'm Fasina Ayomikun</h1>
             <p>{text.substring(0, substring)}|</p>
-            <Button variant='outline-primary' className='btn'>
-              <Link to='/contact'>Hire Me</Link>
+            <Button variant="outline-primary" className="btn">
+              <Link to="/contact">Hire Me</Link>
             </Button>
-            <Button variant='outline-primary' className='btn'>
+            <Button variant="outline-primary" className="btn">
               <a href={file} download>
                 Download CV
               </a>
             </Button>
           </Col>
           <Col>
-            <img src={image} alt='' />
+            <img src={image} alt="" />
           </Col>
         </Row>
       </div>
 
-      <div className='social-icons'>
-        <a href='https://github.com/Fasina-ayomikun' target='blank'>
+      <div className="social-icons">
+        <a href="https://github.com/Fasina-ayomikun" target="blank">
           <FaGithubSquare />
         </a>
         <a
-          href='https://www.youtube.com/channel/UClog1_6iQNgYEDlAwbH6CYA'
-          target='blank'
+          href="https://www.youtube.com/channel/UClog1_6iQNgYEDlAwbH6CYA"
+          target="blank"
         >
           <FaYoutubeSquare />
         </a>
         <a
-          href='https://www.linkedin.com/in/ayomikun-fasina-b791ab225'
-          target='blank'
+          href="https://www.linkedin.com/in/ayomikun-fasina-b791ab225"
+          target="blank"
         >
           <FaLinkedin />
         </a>
