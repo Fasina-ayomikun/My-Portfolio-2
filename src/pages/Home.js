@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
-import { Button } from "react-bootstrap";
+// import { Button } from "react-bootstrap";
 import Navbar from "../components/Navbar";
-import { Link } from "react-router-dom";
-import file from "../images/resume.jpg";
+// import { useNavigate } from "react-router-dom";
+// import file from "../images/resume.jpg";
 import image from "../images/hero.png";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -10,8 +10,14 @@ import { FaGithubSquare, FaLinkedin, FaYoutubeSquare } from "react-icons/fa";
 import { useAppProvider } from "../context";
 import Sidebar from "../components/Sidebar";
 import Modal from "../components/Modal";
+import HireMeDownloadCvButtons from "../components/HireMeDownloadCvButtons";
 
 function Home() {
+  // const navigate = useNavigate();
+  // // const navigateHandler = () => {
+  // //   navigate("/contact");
+  // // };
+
   let text =
     "I am a self taught frontend developer, a lady working towards significant self development, a passionate and dedicated web developer and programmer. I also enjoy working with people to create user friendly websites.";
   const { loading, lightmode } = useAppProvider();
@@ -46,14 +52,22 @@ function Home() {
           <Col className="home-info">
             <h1>I'm Fasina Ayomikun</h1>
             <p>{text.substring(0, substring)}|</p>
-            <Button variant="outline-primary" className="btn">
-              <Link to="/contact">Hire Me</Link>
+            {/* <Button
+              variant="outline-primary"
+              className="btn"
+              onClick={navigateHandler}
+            >
+              Hire Me
             </Button>
-            <Button variant="outline-primary" className="btn">
-              <a href={file} download>
-                Download CV
-              </a>
-            </Button>
+            <Button
+              variant="outline-primary"
+              className="btn"
+              href={file}
+              download
+            >
+              Download CV
+            </Button> */}
+            <HireMeDownloadCvButtons />
           </Col>
           <Col>
             <img src={image} alt="" />

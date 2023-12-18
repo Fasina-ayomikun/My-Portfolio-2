@@ -1,12 +1,13 @@
 import React from "react";
-import { Row, Col, Button } from "react-bootstrap";
+import { Row, Col } from "react-bootstrap";
 import Navbar from "../components/Navbar";
-import file from "../images/resume.jpg";
+// import file from "../images/resume.jpg";
 import image from "../images/person.png";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import { useAppProvider } from "../context";
 import Sidebar from "../components/Sidebar";
 import Modal from "../components/Modal";
+import HireMeDownloadCvButtons from "../components/HireMeDownloadCvButtons";
 
 function About() {
   const { lightmode, loading } = useAppProvider();
@@ -19,11 +20,11 @@ function About() {
         lightmode ? "about-section section light-mode" : "section about-section"
       }`}
     >
-      <div className='container about-container'>
+      <div className="container about-container">
         <Navbar />
         <hr />
         <Sidebar />
-        <Row className='about-content'>
+        <Row className="about-content">
           <Col>
             <h2>About Me</h2>
             <p>
@@ -35,56 +36,49 @@ function About() {
               languages.
             </p>
 
-            <Button variant='outline-primary' className='btn'>
-              <Link to='/contact'>Hire Me</Link>
-            </Button>
-            <Button variant='outline-primary' className='btn'>
-              <a href={file} download>
-                Download CV
-              </a>
-            </Button>
+            <HireMeDownloadCvButtons />
           </Col>
           <Col>
-            <img src={image} alt='' />
+            <img src={image} alt="" />
           </Col>
         </Row>
         <h3>Skills</h3>
-        <div className='skills-content'>
+        <div className="skills-content">
           <Row>
-            <Col className='skill'>
+            <Col className="skill">
               <h4>HTML</h4>
             </Col>
-            <Col className='skill'>
+            <Col className="skill">
               <h4>CSS</h4>
             </Col>
-            <Col className='skill'>
+            <Col className="skill">
               <h4>JavaScript</h4>
             </Col>
           </Row>
           <Row>
-            <Col className='skill'>
+            <Col className="skill">
               <h4>Typescript</h4>
             </Col>
-            <Col className='skill'>
+            <Col className="skill">
               <h4>React</h4>
             </Col>
-            <Col className='skill'>
+            <Col className="skill">
               <h4>NextJs</h4>
             </Col>
           </Row>
           <Row>
-            <Col className='skill'>
+            <Col className="skill">
               <h4>NodeJs</h4>
             </Col>
-            <Col className='skill'>
+            <Col className="skill">
               <h4>Express</h4>
             </Col>
-            <Col className='skill'>
+            <Col className="skill">
               <h4>MongoDB</h4>
             </Col>
           </Row>
         </div>
-        <h5 className='footer'>
+        <h5 className="footer">
           Copyright &copy; {new Date().getFullYear()}. All rights reserved
         </h5>
       </div>
