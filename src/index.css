@@ -188,6 +188,7 @@ button {
   min-height: 100px;
 }
 .btn {
+  color: var(--beige);
   margin-right: 30px;
   padding: 7px 10px;
   width: 150px;
@@ -197,10 +198,6 @@ button {
 .home-info p {
   font-weight: 300;
   margin: 35px 0;
-}
-
-.btn {
-  color: var(--beige);
 }
 
 .social-icons {
