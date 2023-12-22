@@ -66,6 +66,7 @@ button {
 }
 .darkmode-img {
   height: 60px;
+  cursor: pointer;
 }
 .nav-links {
   display: flex;
@@ -187,6 +188,7 @@ button {
   min-height: 100px;
 }
 .btn {
+  color: var(--beige);
   margin-right: 30px;
   padding: 7px 10px;
   width: 150px;
@@ -196,10 +198,6 @@ button {
 .home-info p {
   font-weight: 300;
   margin: 35px 0;
-}
-
-.btn a {
-  color: var(--beige);
 }
 
 .social-icons {
@@ -576,7 +574,8 @@ button {
   .home-info p {
     text-align: center;
   }
-  .home-info button {
+  .home-info button,
+  .home-info a {
     margin: 0 auto;
     display: flex;
     align-items: center;
