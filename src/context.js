@@ -24,6 +24,9 @@ const AppProvider = ({ children }) => {
     const timeout = setTimeout(() => {
       setLoading(false);
     }, 3000);
+    return () => {
+      clearTimeout(timeout);
+    };
   }, []);
   useEffect(() => {
     if (lightmode === true) {

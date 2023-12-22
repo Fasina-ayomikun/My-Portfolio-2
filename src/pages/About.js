@@ -18,64 +18,64 @@ function About() {
         lightmode ? "about-section section light-mode" : "section about-section"
       }`}
     >
-      <div className="container about-container">
+      <div className='container about-container'>
         <Navbar />
         <hr />
         <Sidebar />
-        <Row className="about-content">
+        <Row className='about-content'>
           <Col>
             <h2>About Me</h2>
             <p>
               I am a self taught frontend developer, a lady working towards
               significant self development, a passionate and dedicated web
-              developer and programmer. I am currently skilled in HTML,CSS and
-              JavaScript and i working towards incremental knowledge and skill
-              acquisition in web development and other interesting programming
-              languages.
+              developer and Youtuber. I am currently skilled in HTML,CSS,
+              JavaScript, React and some other frontend frameworks. I am working
+              towards incremental knowledge and skill acquisition in web
+              development and other interesting programming languages.
             </p>
             <HireMeDownloadCvButtons />
           </Col>
           <Col>
-            <img src={image} alt="" />
+            <img src={image} alt='' />
           </Col>
         </Row>
         <h3>Skills</h3>
-        <div className="skills-content">
+        <div className='skills-content'>
           <Row>
-            <Col className="skill">
+            <Col className='skill'>
               <h4>HTML</h4>
             </Col>
-            <Col className="skill">
+            <Col className='skill'>
               <h4>CSS</h4>
             </Col>
-            <Col className="skill">
+            <Col className='skill'>
               <h4>JavaScript</h4>
             </Col>
           </Row>
           <Row>
-            <Col className="skill">
+            <Col className='skill'>
               <h4>Typescript</h4>
             </Col>
-            <Col className="skill">
+            <Col className='skill'>
               <h4>React</h4>
             </Col>
-            <Col className="skill">
+            <Col className='skill'>
               <h4>NextJs</h4>
             </Col>
           </Row>
           <Row>
-            <Col className="skill">
+            <Col className='skill'>
               <h4>NodeJs</h4>
             </Col>
-            <Col className="skill">
+            <Col className='skill'>
               <h4>Express</h4>
             </Col>
-            <Col className="skill">
+            <Col className='skill'>
               <h4>MongoDB</h4>
             </Col>
           </Row>
         </div>
-        <h5 className="footer">
+        <h5 className='footer'>
           Copyright &copy; {new Date().getFullYear()}. All rights reserved
         </h5>
       </div>

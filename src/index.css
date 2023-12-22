@@ -449,6 +449,33 @@ button {
 .home-container .social-icons {
   padding-bottom: 30px;
 }
+/* Error Page */
+
+.error {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--beige);
+  height: 100vh;
+}
+.error h1 {
+  font-size: 7rem;
+  text-align: center;
+  margin: 0;
+}
+.error p {
+  font-size: 1.1rem;
+  text-align: center;
+  margin: 2px 0;
+}
+.error a {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 0.6rem;
+  text-decoration: underline;
+  cursor: pointer;
+}
 @keyframes slider {
   0% {
     transform: translateX(-80vw);

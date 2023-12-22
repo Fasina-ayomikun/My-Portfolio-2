@@ -1,32 +1,47 @@
-import React, { useRef } from "react";
-import { Form, FloatingLabel, FormControl, Button } from "react-bootstrap";
+import React, { useRef, useState } from "react";
+import { Form, FloatingLabel, Button } from "react-bootstrap";
 import Navbar from "../components/Navbar";
 import emailjs from "@emailjs/browser";
-import { FaGithubSquare, FaLinkedin } from "react-icons/fa";
+import { FaGithubSquare, FaLinkedin, FaCopy } from "react-icons/fa";
 import { useAppProvider } from "../context";
 import Sidebar from "../components/Sidebar";
 import Modal from "../components/Modal";
+import { toast } from "react-toastify";
+const email = "ayomikunfasina240@gmail.com";
+const phone = "+2348169679471";
 function Contact() {
+  const [submitting, setSubmitting] = useState(false);
   const { loading, lightmode } = useAppProvider();
 
   const form = useRef();
-
+  const handleCopyToClipboard = async (value) => {
+    try {
+      await navigator.clipboard.writeText(value);
+      toast.success("Copied to Clipboard");
+    } catch (error) {
+      console.log(error);
+    }
+  };
   const sendEmail = (e) => {
     e.preventDefault();
-
+    setSubmitting(true);
     emailjs
       .sendForm(
-        "service_t78vsfg",
-        "template_o6b0e4o",
+        process.env.REACT_APP_EMAILJS_SERVICE,
+        process.env.REACT_APP_EMAILJS_TEMPLATEID,
         form.current,
-        "JZyuDV0Kihz92g5_Z"
+        process.env.REACT_APP_EMAILJS_PUBLIC_KEY
       )
       .then(
         (result) => {
           console.log(result);
+          toast.success("Message sent successfully");
+          setSubmitting(false);
         },
         (error) => {
           console.log(error.text);
+          toast.error(error.text);
+          setSubmitting(false);
         }
       );
   };
@@ -60,7 +75,7 @@ function Contact() {
                     type='text'
                     placeholder='Your Name'
                     autoComplete='false'
-                    name='hidden user_name'
+                    name='user_name'
                     style={{
                       height: "100px",
                       backgroundColor: "transparent",
@@ -104,12 +119,13 @@ function Contact() {
                 </FloatingLabel>
               </Form.Group>
               <Button
+                disabled={submitting}
                 variant='outline-primary'
                 className='btn'
                 value='Send'
                 type='submit'
               >
-                Send Message
+                {submitting ? "Sending..." : "Send Message"}
               </Button>
             </Form>
           </div>
@@ -119,10 +135,16 @@ function Contact() {
         <div>
           <div>
             <h4>
-              Email: <span>ayomikunfasina240@gmmail.com</span>
+              Email:{" "}
+              <span onClick={() => handleCopyToClipboard(email)}>
+                ayomikunfasina240@gmail.com <FaCopy />
+              </span>
             </h4>
             <h4>
-              Phone: <span>+234 816 967 9471</span>
+              Phone:{" "}
+              <span onClick={() => handleCopyToClipboard(phone)}>
+                +2348169679471 <FaCopy />{" "}
+              </span>
             </h4>
           </div>
           <div className='social-icons'>

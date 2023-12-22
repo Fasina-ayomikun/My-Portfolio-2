@@ -16,7 +16,7 @@ function Home() {
   const [substring, setSubstring] = useState(30);
 
   useEffect(() => {
-    setTimeout(() => {
+    const timer = setTimeout(() => {
       setSubstring((oldString) => {
         let newString = oldString + 1;
         if (oldString === text.length) {
@@ -25,6 +25,10 @@ function Home() {
         return newString;
       });
     }, 100);
+    return () => {
+      clearTimeout(timer);
+    };
+    // eslint-disable-next-line
   }, [substring]);
   if (loading) {
     return <Modal />;
@@ -35,36 +39,36 @@ function Home() {
         lightmode ? "home-section section light-mode" : "home-section section"
       }`}
     >
-      <div className="home-container container">
+      <div className='home-container container'>
         <Navbar />
         <hr />
         <Sidebar />
 
-        <Row className="home-content">
-          <Col className="home-info">
+        <Row className='home-content'>
+          <Col className='home-info'>
             <h1>I'm Fasina Ayomikun</h1>
             <p>{text.substring(0, substring)}|</p>
             <HireMeDownloadCvButtons />
           </Col>
           <Col>
-            <img src={image} alt="" />
+            <img src={image} alt='' />
           </Col>
         </Row>
       </div>
 
-      <div className="social-icons">
-        <a href="https://github.com/Fasina-ayomikun" target="blank">
+      <div className='social-icons'>
+        <a href='https://github.com/Fasina-ayomikun' target='blank'>
           <FaGithubSquare />
         </a>
         <a
-          href="https://www.youtube.com/channel/UClog1_6iQNgYEDlAwbH6CYA"
-          target="blank"
+          href='https://www.youtube.com/channel/UClog1_6iQNgYEDlAwbH6CYA'
+          target='blank'
         >
           <FaYoutubeSquare />
         </a>
         <a
-          href="https://www.linkedin.com/in/ayomikun-fasina-b791ab225"
-          target="blank"
+          href='https://www.linkedin.com/in/ayomikun-fasina-b791ab225'
+          target='blank'
         >
           <FaLinkedin />
         </a>
