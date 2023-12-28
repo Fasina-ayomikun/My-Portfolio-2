@@ -27,7 +27,7 @@ export const projects = [
     name: "Mama Recipe App",
     url: image12,
     desc: "A MERN Stack website.",
-    github_url: "https://github.com/Fasina-ayomikun/Mama-Recipe-Frontend",
+    github_url: "https://github.com/Fasina-ayomikun/Mama-s-Recipe-Frontend",
     profile_url: "https://mama-s-recipe.vercel.app",
   },
   {
