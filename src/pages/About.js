@@ -2,7 +2,7 @@ import React from "react";
 import { Row, Col } from "react-bootstrap";
 import Navbar from "../components/Navbar";
 import image from "../images/person.png";
-import { useAppProvider } from "../context";
+import { useAppProvider } from "../store/context";
 import Sidebar from "../components/Sidebar";
 import Modal from "../components/Modal";
 import HireMeDownloadCvButtons from "../components/HireMeDownloadCvButtons";

@@ -1,8 +1,8 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import { Row, Col } from "react-bootstrap";
-import { projects } from "../data";
-import { useAppProvider } from "../context";
+import { projects } from "../store/data";
+import { useAppProvider } from "../store/context";
 import Sidebar from "../components/Sidebar";
 import Modal from "../components/Modal";
 import LinkButton from "../components/LinkButton";

@@ -3,7 +3,7 @@ import { Form, FloatingLabel, Button } from "react-bootstrap";
 import Navbar from "../components/Navbar";
 import emailjs from "@emailjs/browser";
 import { FaGithubSquare, FaLinkedin } from "react-icons/fa";
-import { useAppProvider } from "../context";
+import { useAppProvider } from "../store/context";
 import Sidebar from "../components/Sidebar";
 import Modal from "../components/Modal";
 function Contact() {
