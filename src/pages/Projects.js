@@ -7,6 +7,8 @@ import { projects } from "../data";
 import { useAppProvider } from "../context";
 import Sidebar from "../components/Sidebar";
 import Modal from "../components/Modal";
+import LinkButton from "../components/LinkButton";
+
 function Projects() {
   const { lightmode, loading } = useAppProvider();
   const navigation = useNavigate();
@@ -21,31 +23,23 @@ function Projects() {
           : "projects-section section"
       }`}
     >
-      <div className='projects-container container'>
+      <div className="projects-container container">
         <Navbar />
         <hr />
         <Sidebar />
-        <div className='projects-content'>
+        <div className="projects-content">
           <h2>My Projects</h2>
-          <Row className='projects-info'>
+          <Row className="projects-info">
             {projects.map(
               ({ url, desc, id, name, github_url, profile_url }) => {
                 return (
-                  <Col key={id} className='project'>
-                    <img src={url} alt='' />
+                  <Col key={id} className="project">
+                    <img src={url} alt="" />
                     <h3>{name}</h3>
                     <p>{desc}</p>
-                    <div className='project-btns'>
-                      <Button variant='outline-primary'>
-                        <a href={profile_url} target='blank'>
-                          View
-                        </a>
-                      </Button>
-                      <Button variant='outline-primary'>
-                        <a href={github_url} target='blank'>
-                          Repo
-                        </a>
-                      </Button>
+                    <div className="project-btns">
+                      <LinkButton url={profile_url}>View</LinkButton>
+                      <LinkButton url={github_url}>Repo</LinkButton>
                     </div>
                   </Col>
                 );
@@ -53,7 +47,7 @@ function Projects() {
             )}
           </Row>
         </div>
-        <h5 className='footer'>
+        <h5 className="footer">
           Copyright &copy; {new Date().getFullYear()}. All rights reserved
         </h5>
       </div>
