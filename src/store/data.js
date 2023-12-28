@@ -16,7 +16,7 @@ import image15 from "../images/mega-chat.png";
 export const projects = [
   {
     id: "15",
-    name: "Meaga Chat App",
+    name: "Mega Chat App",
     url: image15,
     desc: "A MERN Stack chat website with realtime connection using Socket io.Also has phone number verification.",
     github_url: "https://github.com/Fasina-ayomikun/Mega-Chat-Frontend",
