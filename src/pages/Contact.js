@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import { Form, FloatingLabel, FormControl, Button } from "react-bootstrap";
+import { Form, FloatingLabel, Button } from "react-bootstrap";
 import Navbar from "../components/Navbar";
 import emailjs from "@emailjs/browser";
 import { FaGithubSquare, FaLinkedin } from "react-icons/fa";
@@ -42,25 +42,25 @@ function Contact() {
             : "section contact-section"
         }`}
       >
-        <div className='contact-container container'>
+        <div className="contact-container container">
           <Navbar />
           <hr />
           <Sidebar />
-          <div className='contact-content'>
+          <div className="contact-content">
             <h4>Have a Job for me?</h4>
             <h2>Send me a message</h2>
-            <Form ref={form} onSubmit={sendEmail} autoComplete='off'>
+            <Form ref={form} onSubmit={sendEmail} autoComplete="off">
               <Form.Group>
                 <FloatingLabel
-                  controlId='floatingInput'
-                  label='Your Name'
-                  className='mb-3'
+                  controlId="floatingInput"
+                  label="Your Name"
+                  className="mb-3"
                 >
                   <Form.Control
-                    type='text'
-                    placeholder='Your Name'
-                    autoComplete='false'
-                    name='hidden user_name'
+                    type="text"
+                    placeholder="Your Name"
+                    autoComplete="false"
+                    name="hidden user_name"
                     style={{
                       height: "100px",
                       backgroundColor: "transparent",
@@ -71,11 +71,11 @@ function Contact() {
                 </FloatingLabel>
               </Form.Group>
               <Form.Group>
-                <FloatingLabel controlId='floatingInput' label='Your Email'>
+                <FloatingLabel controlId="floatingInput" label="Your Email">
                   <Form.Control
-                    type='email'
-                    name='user_email'
-                    placeholder='Your Email'
+                    type="email"
+                    name="user_email"
+                    placeholder="Your Email"
                     style={{
                       height: "100px",
                       backgroundColor: "transparent",
@@ -87,13 +87,13 @@ function Contact() {
               </Form.Group>
               <Form.Group>
                 <FloatingLabel
-                  controlId='floatingInput'
-                  label='Your Message'
-                  className='mb-3'
+                  controlId="floatingInput"
+                  label="Your Message"
+                  className="mb-3"
                 >
                   <Form.Control
-                    placeholder='Your Message'
-                    name='message'
+                    placeholder="Your Message"
+                    name="message"
                     style={{
                       height: "100px",
                       backgroundColor: "transparent",
@@ -104,10 +104,10 @@ function Contact() {
                 </FloatingLabel>
               </Form.Group>
               <Button
-                variant='outline-primary'
-                className='btn'
-                value='Send'
-                type='submit'
+                variant="outline-primary"
+                className="btn"
+                value="Send"
+                type="submit"
               >
                 Send Message
               </Button>
@@ -125,13 +125,13 @@ function Contact() {
               Phone: <span>+234 816 967 9471</span>
             </h4>
           </div>
-          <div className='social-icons'>
-            <a href='https://github.com/Fasina-ayomikun/' target='blank'>
+          <div className="social-icons">
+            <a href="https://github.com/Fasina-ayomikun/" target="blank">
               <FaGithubSquare />
             </a>
             <a
-              href='https://www.linkedin.com/in/ayomikun-fasina-b791ab225'
-              target='blank'
+              href="https://www.linkedin.com/in/ayomikun-fasina-b791ab225"
+              target="blank"
             >
               <FaLinkedin />
             </a>

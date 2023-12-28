@@ -1,13 +1,6 @@
 import { Button } from "react-bootstrap";
-import { useNavigate } from "react-router-dom";
 
 const LinkButton = ({ url, children }) => {
-  const navigate = useNavigate();
-
-  //   const navigateHandler = (path) => {
-  //     navigate(path);
-  //   };
-
   return (
     <Button
       variant="outline-primary"
