@@ -4,7 +4,7 @@ import image from "../images/hero.png";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import { FaGithubSquare, FaLinkedin, FaYoutubeSquare } from "react-icons/fa";
-import { useAppProvider } from "../context";
+import { useAppProvider } from "../store/context";
 import Sidebar from "../components/Sidebar";
 import Modal from "../components/Modal";
 import HireMeDownloadCvButtons from "../components/HireMeDownloadCvButtons";

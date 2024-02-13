@@ -1,10 +1,12 @@
 import React from "react";
 import Navbar from "../components/Navbar";
-import { Button, Row, Col } from "react-bootstrap";
-import { projects } from "../data";
-import { useAppProvider } from "../context";
+import { Row, Col } from "react-bootstrap";
+import { projects } from "../store/data";
+import { useAppProvider } from "../store/context";
 import Sidebar from "../components/Sidebar";
 import Modal from "../components/Modal";
+import LinkButton from "../components/LinkButton";
+
 function Projects() {
   const { lightmode, loading } = useAppProvider();
   if (loading) {
@@ -33,16 +35,8 @@ function Projects() {
                     <h3>{name}</h3>
                     <p>{desc}</p>
                     <div className='project-btns'>
-                      <Button variant='outline-primary'>
-                        <a href={profile_url} target='blank'>
-                          View
-                        </a>
-                      </Button>
-                      <Button variant='outline-primary'>
-                        <a href={github_url} target='blank'>
-                          Repo
-                        </a>
-                      </Button>
+                      <LinkButton url={profile_url}>View</LinkButton>
+                      <LinkButton url={github_url}>Repo</LinkButton>
                     </div>
                   </Col>
                 );

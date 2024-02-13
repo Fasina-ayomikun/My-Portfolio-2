@@ -331,14 +331,12 @@ button {
   align-items: center;
   margin-bottom: 40px;
 }
-.project button {
+.project-button {
   background-color: var(--beige);
   border: 2px solid var(--beige);
   margin-top: 20px;
-}
-.project a {
   color: var(--main-green);
-  font-weight: 600;
+  font-weight: bold;
 }
 .project {
   width: 100%;
