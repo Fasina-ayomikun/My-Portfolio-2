@@ -1,22 +1,22 @@
-import image from "./images/quiz app.png";
-import image2 from "./images/countries.png";
-import image3 from "./images/tasty-kitchen.png";
-import image4 from "./images/space.png";
-import image6 from "./images/beautyhairs.png";
-import image7 from "./images/portfolio1.png";
-import image8 from "./images/todo.png";
-import image9 from "./images/stopwatch.png";
-import image10 from "./images/tictactoe.png";
-import image11 from "./images/guess the colour.png";
-import image12 from "./images/mama-recipe.png";
-import image13 from "./images/todo-full.png";
-import image14 from "./images/health-first.png";
-import image15 from "./images/mega-chat.png";
+import image from "../images/quiz app.png";
+import image2 from "../images/countries.png";
+import image3 from "../images/tasty-kitchen.png";
+import image4 from "../images/space.png";
+import image6 from "../images/beautyhairs.png";
+import image7 from "../images/portfolio1.png";
+import image8 from "../images/todo.png";
+import image9 from "../images/stopwatch.png";
+import image10 from "../images/tictactoe.png";
+import image11 from "../images/guess the colour.png";
+import image12 from "../images/mama-recipe.png";
+import image13 from "../images/todo-full.png";
+import image14 from "../images/health-first.png";
+import image15 from "../images/mega-chat.png";
 
 export const projects = [
   {
     id: "15",
-    name: "Meaga Chat App",
+    name: "Mega Chat App",
     url: image15,
     desc: "A MERN Stack chat website with realtime connection using Socket io.Also has phone number verification.",
     github_url: "https://github.com/Fasina-ayomikun/Mega-Chat-Frontend",
@@ -27,7 +27,7 @@ export const projects = [
     name: "Mama Recipe App",
     url: image12,
     desc: "A MERN Stack website.",
-    github_url: "https://github.com/Fasina-ayomikun/Mama-Recipe-Frontend",
+    github_url: "https://github.com/Fasina-ayomikun/Mama-s-Recipe-Frontend",
     profile_url: "https://mama-s-recipe.vercel.app",
   },
   {
